@@ -32,7 +32,7 @@
 }
 
 body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto Slab', serif;
     margin: 0;
 }
 
@@ -44,6 +44,17 @@ a{
 ul{
     list-style: none;
     padding-left: 0;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 /*Typography*/
@@ -102,4 +113,30 @@ p{
 .navbar_menu_item:hover{
     background-color: var(--color-dark-olive-green);
     
+}
+/*Home*/
+#home{
+    background: url('imgs/almondlightbg.jpg') center/cover no-repeat;
+    padding: 40px;
+    text-align: center;
+}
+.home_avatar{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+}
+.home_title,
+.home_description{
+    color: var(--color-dark-olive-green);
+    text-align: center;
+}
+.home_contact{
+    color: var(--color-dark-olive-green);
+    font-size: var(--font-regular);
+    font-weight: var(--weight-bold);
+    margin: 24px;
+    padding: 8px 12px;
+    border: 2px solid var(--color-white);
+    border-radius: 4px;
 }
