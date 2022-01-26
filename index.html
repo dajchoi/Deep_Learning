@@ -18,37 +18,50 @@
     <body>
         <!--Navbar-->
         <nav id="navbar">
-            <div class="navbar_logo">
-                <a href="#">Dajung Choi</a>
-            </div>
+            <a href="#">Dajung Choi</a>
+            
             <div class="navbar_menu">
-                <ul class="naver_menu">
-                    <li class="navbar_menu_item">Home</li>
-                    <li class="navbar_menu_item">About Me</li>
-                    <li class="navbar_menu_item">Skills</li>
-                    <li class="navbar_menu_item">My Work</li>
-                    <li class="navbar_menu_item">Testimonials</li>
-                    <li class="navbar_menu_item">Contact</li>
+                <ul class="navbar_menu">
+                    <li class="navbar_menu_item" data-link="#home">Home</li>
+                    <li class="navbar_menu_item" data-link="#about">About Me</li>
+                    <li class="navbar_menu_item" data-link="#skills">Skills</li>
+                    <li class="navbar_menu_item" data-link="#work">My Work</li>
+                    <li class="navbar_menu_item" data-link="#activities">Acitivities</li>
+                    <li class="navbar_menu_item" data-link="#contact">Contact</li>
                 </ul>
+                <button class="navbar_toggle-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
+
         </nav>
         <!--Home-->
         <section id="home">
-            <h1 class="home_title">Hello, <br />I'm a Dream Coder</h1>
-            <h2 class="home_description">Data Scientist & Front-End Developer</h2>
-            <button class="home_contact">Contact Me</button>
+            <h1 class="home_title"><br/> Hello, <br />I'm a Dream Coder</h1>
+            <h2 class="home_description">Data Scientist | Front-End Developer</h2>
+            <button class="home_contact" style="border-color: transparent;"><div style="color: black; font-size: 20px; font-family: Crimpson text;">Contact Me</div></button>
         </section>
 
         <!--About-->
         <section id="about" class="section_container">
-            <h1>About Me</h1>
+            <div class="about_me" style="display: inline-block">
+            <div style="float: left">
+            <img
+            src = "imgs/Profile.jpg"
+            alt = "Dajung's profile photo"
+            class = "home_avatar"/>
+            </div>
+            
+            <h1>[ About Me ]</h1>
             <p>
-                Currently I am a junior in Stony Brook University of New York. I am double majoring in Computer Science
+                Currently I am a senior in Stony Brook University of New York, double majoring in Computer Science
                 and Applied Mathematics of Statistics.
-                I have been interested in machine learning and has contributed much to make related projects.
-                Also I enjoy and am proficient in visualizing and organizing applications which makes me both an
-                Engineer and a Data Scientist.
+                I am primarily interested in AI field which implies analyzation, processing, and modeling of various types of data.
+                I also enjoy working with visual designs which correlates to "Visualization of Computer Programming".
             </p>
+            </br>
+            <img src="imgs/arts.jpg" style="width:600px; height: 250px; float:inline-end"></img>
+            </div>
             <div class="about_majors">
                 <div class="major">
                     <div class="major_icon">
@@ -56,8 +69,8 @@
                     </div>
                     <div class="major_title">Front-end</div>
                     <div class="major_description">
-                        HTML, CSS, Java Script, <br />
-                        MongoDB, React, GraphQl
+                          HTML, CSS, Java Script, <br />
+                          MongoDB, React, GraphQl
                     </div>
                 </div>
                 <div class="major">
@@ -74,10 +87,10 @@
                     <div class="major_icon">
                         <i class="fas fa-database"></i>
                     </div>
-                    <div class="major_title">Machine-Learning</div>
+                    <div class="major_title">Artificial Intelligence</div>
                     <div class="major_description">
-                        Python(numpy), Jupyterlab, <br />
-                        Tensorflow
+                        Python(numpy), Jupyterlab,  <br />
+                        Tensorflow  
                     </div>
                 </div>
             </div>
@@ -103,19 +116,19 @@
                     <div class="skill">
                         <div class="skill_description">
                             <span>Java</span>
-                            <span>95%</span>
+                            <span>75%</span>
                         </div>
                         <div class="skill_bar">
-                            <div class="skill_value" style="width: 95%;"></div>
+                            <div class="skill_value" style="width: 75%;"></div>
                         </div>
                     </div>
                     <div class="skill">
                         <div class="skill_description">
                             <span>Java Script</span>
-                            <span>80%</span>
+                            <span>90%</span>
                         </div>
                         <div class="skill_bar">
-                            <div class="skill_value" style="width: 80%;"></div>
+                            <div class="skill_value" style="width: 90%;"></div>
                         </div>
                     </div>
                     <div class="skill">
@@ -139,15 +152,24 @@
                     <div class="skill">
                         <div class="skill_description">
                             <span>C</span>
-                            <span>70%</span>
+                            <span>50%</span>
                         </div>
                         <div class="skill_bar">
-                            <div class="skill_value" style="width: 70%;"></div>
+                            <div class="skill_value" style="width: 50%;"></div>
                         </div>
                     </div>
                     <div class="skill">
                         <div class="skill_description">
                             <span>Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill_bar">
+                            <div class="skill_value" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>R</span>
                             <span>90%</span>
                         </div>
                         <div class="skill_bar">
@@ -189,46 +211,97 @@
 
         <!--Work-->
         <section id="work">
-            <h1>My Work</h1>
-            <h3>Projects</h3>
-            <div class="work_categories">
-                <button class="category_btn">
-                    All<span class="category_count">3</span>
-                </button>
-                <button class="category_btn">
-                    Front-end<span class="category_count">3</span>
-                </button>
-                <button class="category_btn">
-                    Android<span class="category_count">3</span>
-                </button>
-                <button class="category_btn">
-                    Machine-Learning<span class="category_count">3</span>
-                </button>
-            </div>
-
-            <div class="work_projects">
-                <a href="https://github.com/djchoi-collab" class="project" target="blank">
-                    <img src="" alt="">
-                    <div class="project_description">
-                        <h3>Project</h3>
-                        <span>Explanation</span>
-                    </div>
-                </a>
+            <div class="section_container">
+                <h1>My Work</h1>
+                <h3>Projects</h3>
+                <div class="work_categories">
+                    <button class="category_btn" data-filter="*">
+                        All  <span class="category_count">5</span>
+                    </button>
+                    <button class="category_btn" data-filter="front-end">
+                        Front-end  <span class="category_count">1</span>
+                    </button>
+                    <button class="category_btn" data-filter="android">
+                        Android  <span class="category_count">0</span>
+                    </button>
+                    <button class="category_btn" data-filter="data-science">
+                        Data Science (AI, Analytics)  <span class="category_count">4</span>
+                    </button>
+                    <button class="category_btn" data-filter="application">
+                        Full Stack Application  <span class="category_count">1</span>
+                    </button>
+                </div>
+    
+                <div class="work_projects">
+                    <a href="https://github.com/dajchoi/Frond-end" class="project" target="blank" data-type="front-end">
+                        <img src="imgs/personalwebsite.JPG" alt="" class="project_img" style="width: 250px">
+                        <div class="project_description">
+                            <h3>Personal Website</h3>
+                            <span style="font-size: 15px;">Info/Projects/Contact </br>
+                            </span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/dajchoi/Deep_Learning" class="project" target="blank" data-type="data-science">
+                        <img src="imgs/SizeFit.png" alt="" class="project_img">
+                        <div class="project_description">
+                            <h3>Size Fit</h3>
+                            <span style="font-size: 15px;">Processing data for Clothing Fit Recommendation with json data given</br>
+                            [KNN Algorithm]</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/dajchoi/Deep_Learning" class="project" target="blank" data-type="data-science">
+                        <img src="imgs/Solar.PNG" alt="" class="project_img" style="width: 250px">
+                        <div class="project_description">
+                            <h3>Solar Energy</h3>
+                            <span style="font-size: 15px;">Creation of AI model for predicting Solar Energy based on features given; DHI, RH, T</br>
+                            [Random Forest Algorithm]</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/dajchoi/Deep_Learning" class="project" target="blank" data-type="data-science">
+                        <img src="imgs/Amazon.png" alt="" class="project_img" style="width: 250px">
+                        <div class="project_description">
+                            <h3>Amazon Fine Food Review</h3>
+                            <span style="font-size: 15px;">Creation of AI model dealing with NLP, Amazon Fine Food Review </br>
+                            [BiLSTM . L2-Regulariation]</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/dajchoi/R_Programming" class="project" target="blank" data-type="data-science">
+                        <img src="imgs/Rproject.PNG" alt="" class="project_img">
+                        <div class="project_description">
+                            <h3>R Project</h3>
+                            <span style="font-size: 15px;">Final Project of Statistical Laboratory Course (AMS394) based on, </br>
+                            [Permutation . BootStrap . Student/Welch t-test]</span>
+                        </div>
+                    </a>
+                    <a href="https://shielded-bayou-49275.herokuapp.com/" class="project" target="blank" data-type="application">
+                        <img src="imgs/Lusio.jpg" alt="" class="project_img">
+                        <div class="project_description">
+                            <h3>Lusio</h3>
+                            <span style="font-size: 15px;">User-generated Application for making platforms and quizzes for other players to enjoy and gain knowledge.</br>
+                            </span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
-        <!--Testimonials-->
-        <section id="testimonials">
-            <h1>Testimonials</h1>
-            <h3>See what they say about me</h3>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <img src="" alt="" class="testimonial_avatar">
-                    <div class="testimonial_speech-bubble">
-                        <p>
+    <hr/>
+        <!--Extracurricular Activities-->
+        <section id="activities">
+            <div class="section_container">
+                <h1>Extracurricular Activities</h1>
+            <h3>Teacher Assistant: </br>
+            </br>Foundation of Science (2019.08 ~ 12)
+            </br>Linear Algebra (2019.03 ~ 06)</h3>
 
-                        </p>
-                    </div>
-                </div>
+            <h3></br>Logos Made: </br>
+            </br>Beyond_ Personal Website Logo
+            </br>Lusio_ Logo for a system enabling users to create their own platform for quizzes 
+            </br>and have other users play the quizzes with much enthusiasm.</h3>  
+            
+            <div class="logos_made" style="display: table-cell">
+                <img src="imgs/Beyond.png" alt="Site_Logo" class="extra_logo" style="float: left; margin-left: 100px;"> 
+                <img src="imgs/Lusio.jpg" alt="Site_Logo" class="extra_logo" style="width: 400px; margin-top: 150px;">
+            </div>        
             </div>
         </section>
 
@@ -236,16 +309,23 @@
         <section id="contact">
             <h1 class="contact_title">--Contact--</h1>
             <h2 class="contact_email">djchoi9987@gmail.com</h2>
-            <h3 class="contact_pn">010 8978 0638</h3>
+            <h3 class="contact_pn">631 428 2862</h3>
             <div class="contact_links">
-                <a href="https://github.com/djchoi-collab" target="-blank">
+                <a href="https://github.com/dajchoi" target="-blank">
                     <i class="fa fa-github"></i>
                 </a>
                 <a href="#" target="_blank">
-                    <i class="fa fa-linkedin-square"></i>
+                    <i><img src="imgs/Beyond.png" style="width: 90px; height: 90px;"/></i>
                 </a>
             </div>
+            <p class="contact_rights">
+                2020 Dream Coding Ellie - All rights reserved
+            </p>
         </section>
+        <!-- Arrow up -->
+        <button class="arrow-up">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </body>
 
 </html>
